@@ -42,6 +42,7 @@ group :development, :test do
 end
 
 gem 'dotenv-rails'
+gem 'devise', '~> 4.3'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
