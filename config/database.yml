@@ -50,7 +50,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: FriendsManager_production
-  username: FriendsManager
-  password: <%= ENV['FRIENDSMANAGER_DATABASE_PASSWORD'] %>
+  url :"postgres://pljmmhydlvfzvp:6e2f16fcdb8d97cafd242d37b864af1608163a0528ca7f5111499867fe6a9269@ec2-107-21-99-176.compute-1.amazonaws.com:5432/d5v69p82uo1krf"
