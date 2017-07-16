@@ -11,5 +11,13 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require bootstrap/dist/css/bootstrap.css
  *= require_self
  */
+
+ /* Bootstrap overrides */
+ .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+/* End of Bootstrap overrides */
