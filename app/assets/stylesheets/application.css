@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require bootstrap/dist/css/bootstrap.css
+ *= require font-awesome/css/font-awesome.css
+ *= require toastr/toastr.css
  *= require_self
  */
 
@@ -20,4 +22,21 @@
     padding-right: 0px;
     padding-left: 0px;
  }
+
+ .btn-group, .btn-group-vertical {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    right: 24px;
+    top: 4px;
+}
 /* End of Bootstrap overrides */
+.friend-actions{
+    color: white;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color:darkred;
+    text-decoration: underline;
+}

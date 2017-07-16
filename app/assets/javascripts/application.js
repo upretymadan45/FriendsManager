@@ -13,4 +13,5 @@
 //= require rails-ujs
 //= require jquery/dist/jquery.js
 //= require bootstrap/dist/js/bootstrap.js
+//= require toastr/toastr.js
 //= require_tree .
