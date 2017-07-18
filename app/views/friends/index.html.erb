@@ -22,7 +22,7 @@
                 </div>
                 <div class = "panel-body">
                     Address : <%= f.address %> <br/>
-                    <% if f.contact.length>0 %>
+                    <% if f.contact? %>
                         Contact : <%= f.contact %> <br/>
                     <% end %>
                     <a class="btn btn-danger" href="#">
