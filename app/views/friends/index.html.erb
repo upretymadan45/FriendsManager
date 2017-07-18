@@ -21,7 +21,14 @@
                     
                 </div>
                 <div class = "panel-body">
-                    
+                    Address : <%= f.address %> <br/>
+                    <% if f.contact.length>0 %>
+                        Contact : <%= f.contact %> <br/>
+                    <% end %>
+                    <a class="btn btn-danger" href="#">
+                        <i class= "fa fa-envelope"></i>
+                        <%= f.email %>
+                    </a>
                 </div>
             </div>
         </div>

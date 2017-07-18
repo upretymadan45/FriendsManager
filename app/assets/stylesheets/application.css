@@ -40,3 +40,13 @@ a:hover, a:focus {
     color:darkred;
     text-decoration: underline;
 }
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+.required{
+    display:inline;
+    font-weight: bold;
+}

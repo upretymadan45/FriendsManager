@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716152416) do
+ActiveRecord::Schema.define(version: 20170718035837) do
 
   create_table "friends", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "first_name"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 20170716152416) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
+    t.string "email"
+    t.string "contact"
     t.index ["user_id"], name: "index_friends_on_user_id"
   end
 

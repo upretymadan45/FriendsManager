@@ -5,30 +5,92 @@
 </div>
 
 <%= form_for @friend, class: 'form-horizontal' do|f| %>
-
      <div class = "form">
         <div class = "row">
         <div class = "col-sm-2 col-sm-offset-4">
-            <%= f.label :first_name %>
+            <%= f.label :first_name do%>
+                <span class="required">First Name *</span>
+            <% end %>
         </div>
+        
         </div>
         <div class = "row">
         <div class = "col-sm-3 col-sm-offset-4">
             <%= f.text_field :first_name, autofocus: true, class: "form-control" %>
+        </div>
+        <div class="col-sm-3">
+          <% if @friend.errors[:first_name].any?  %>
+              <span class="error">First Name <%= @friend.errors[:first_name][0] %></span>
+            <% end %>
         </div>
         </div>
     </div>
 
     <div class = "row">
       <div class = "col-sm-2 col-sm-offset-4">
-        <%= f.label :last_name %>
+        <%= f.label :last_name do %>
+            <span class="required">Last Name *</span>
+        <% end %>
       </div>
     </div>
     <div class = "row">
       <div class = "col-sm-3 col-sm-offset-4">
         <%= f.text_field :last_name, class: "form-control" %>
       </div>
+      <div class="col-sm-3">
+          <% if @friend.errors[:last_name].any?  %>
+              <span class="error">Last Name <%= @friend.errors[:last_name][0] %></span>
+            <% end %>
+        </div>
     </div>
+
+    <div class = "row">
+      <div class = "col-sm-2 col-sm-offset-4">
+        <%= f.label :email do %>
+          <span class="required">Email *</span>
+        <% end %>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-sm-3 col-sm-offset-4">
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="col-sm-3">
+          <% if @friend.errors[:email].any?  %>
+              <span class="error">Email <%= @friend.errors[:email][0] %></span>
+            <% end %>
+        </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-sm-2 col-sm-offset-4">
+        <%= f.label :address do %>
+          <span class="required">Address *</span>
+        <% end %>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-sm-3 col-sm-offset-4">
+        <%= f.text_field :address, class: "form-control" %>
+      </div>
+      <div class="col-sm-3">
+          <% if @friend.errors[:address].any?  %>
+              <span class="error">Address <%= @friend.errors[:address][0] %></span>
+            <% end %>
+        </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-sm-2 col-sm-offset-4">
+        <%= f.label :contact  %>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-sm-3 col-sm-offset-4">
+        <%= f.text_field :contact, class: "form-control" %>
+      </div>
+    </div>
+
     <br/>
 
     <div class="row">
